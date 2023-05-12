@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body{
+    /* 기본설정 */
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    line-height: 1.5em;
+    font-weight: 300;
+    background-color: #181818;
+    margin: 0;
+    /* 센터링 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+/* before 와 after는 기본적으로 inline 이다. */
+.gnb a:before  {
+    content: '01';
+    background-color: azure;
+    color: black;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.gnb a:after  {
+    content: 'update';
+    font-size: 12px;
+    background-color: crimson;
+    color: black;
+    /* margin top bottom은 얻을 수 없다. */
+    margin-left: 5px;
+    border-radius: 3px;
+    padding: 2px;
+}
